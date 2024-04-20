@@ -6,7 +6,10 @@ body {
     background-color: #333;
     height: 65px;
     padding-left: 80px;
-    padding-top: 35px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header > a {
@@ -16,11 +19,92 @@ body {
     font-weight: bold;
 }
 
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navigation li {
+    margin-left: 20px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
 .content {
     padding-left: 80px;
     padding-right: 80px;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image-box {
+    width: calc(33.333% - 20px);
+    height: auto;
+    background-color: #ddd;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    display: block;
+}
+
+.image-info {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.image-info h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.image-info p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.content form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content input {
+    padding: 5px;
+    width: 80%;
+}
+
+.content textarea {
+    padding: 5px;
+    width: 80%;
+}
+
+.content label {
+    font-weight: bold;
+}
+
+.content button {
+    padding: 10px;
+    background-color: #666;
+    border: 1px solid #333;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 .footer {
@@ -30,4 +114,6 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;
+    position: absolute;
+    bottom: 0;
 }
