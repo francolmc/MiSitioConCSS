@@ -99,7 +99,7 @@ body {
     font-weight: bold;
 }
 
-.content button {
+.content button { 
     padding: 10px;
     background-color: #666;
     border: 1px solid #333;
